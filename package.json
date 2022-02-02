@@ -7,7 +7,7 @@
   "scripts": {
     "local": "NODE_ENV='local' nodemon ./server.js",
     "dev": "NODE_ENV='development' nodemon ./server.js",
-    "start": "functions-framework --target=api",
+    "start": "node server.js",
     "test": "mocha --parallel \"tests/**/*.test.js\" --timeout 15000",
     "watch": "mocha --parallel \"tests/**/*.test.js\" --timeout 5000 --watch"
   },
