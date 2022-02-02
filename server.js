@@ -1,7 +1,7 @@
 import { api } from "./api.js"
 
-const port = 3123
+const port = process.env.PORT || 5000;
 
 api.listen(port,() => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Server is listening at ${port}`)
 })
