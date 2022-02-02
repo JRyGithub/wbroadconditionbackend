@@ -1,13 +1,12 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import path from `path`
+import path from 'path'
 dotenv.config()
 
 export const api = express()
 api.use(cors({ origin: true }))
 api.use(express.json())
-app.use(express.static(path.join(__dirname, 'public')));
 
 
 api.get(`/`,async(req,res) => {
