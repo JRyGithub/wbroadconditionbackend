@@ -3,6 +3,7 @@ export const checkDomain = (req, res, next) => {
     const whiteList = [
       `localhost:5000`,
       `wbroadcondition.web.app`,
+      `wbroadconditionapi.herokuapp.com`
     ]
     if(whiteList.includes(domain)) next()
     else res.status(404).send()

@@ -19,8 +19,8 @@ api.get(`/getMapBoxKey`,checkDomain,async(req,res) => {
   res.send(process.env.MAPBOX_KEY || `Wah wah!`)
 })
 
-api.get(`/sendNotification/:content`,async(req,res) => {
-  const { content } = req.params
+api.post(`/sendNotification`,async(req,res) => {
+  const { content } = req.body
   const response = await sendNotification(content)
   res.send(response)
 })
