@@ -37,7 +37,7 @@ export const sendNotification = async(content) => {
     // ('email': user's email and 'name': is the e-book the user wants to receive)
     const mailOptions = {
       from: `${CLIENT_EMAIL}`,
-      to: `nzryland@gmail.com`,
+      to: `monaharnett@gmail.com`,
       subject: `World Bank Road Condition Website - Feedback`,
       html: content,
     };
